@@ -31,11 +31,11 @@ public class User {					//User类用于储存、传递、检验用户输入的数据
 			}
 	}
 	
-	String getuserName() {
+	String getUserName() {
 		return this.userName;
 	}
 	
-	String getuserPassword() {
+	String getUserPassword() {
 		return this.userPassword;
 	}
 	
