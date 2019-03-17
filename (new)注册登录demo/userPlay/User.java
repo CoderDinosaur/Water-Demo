@@ -1,14 +1,15 @@
 package userPlay;
 import java.util.Scanner;
+// 账号信息表
 
 public class User {					//User类用于储存、传递、检验用户输入的数据
-	String userName = null,userPassword = null;
-	String checkPassword = null,checkPassword_1 = null;	
+	public static String userName = null,userPassword = null;
+	public static String checkPassword = null,checkPassword_1 = null;	
 	/*创建临时变量checkPassword储存第一次输入的密码，checkPassword_1储存确认密码 
            当两次输入相同时 才将值传递给变量userPassword */
 	Scanner input=new Scanner(System.in);
 	
-	User() {                   //构造函数接收用户账号和密码
+	public User() {                   //构造函数接收用户账号和密码
 		System.out.println("注册信息录入");
 		System.out.print("请输入账号：");
 		this.userName = input.nextLine();
@@ -34,7 +35,7 @@ public class User {					//User类用于储存、传递、检验用户输入的数据
 		return this.userName;
 	}
 	
-	String userPassword() {
+	String getuserPassword() {
 		return this.userPassword;
 	}
 	
